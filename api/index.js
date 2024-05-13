@@ -26,15 +26,15 @@ const options = {
 };
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send('Hello Word, Server from Express');
 });
 
-app.post('/', function (req, res) {
+app.post('/api', function (req, res) {
   res.send('POST request to the homepage');
 });
 
-app.get('/new-route', (req, res) => {
+app.get('/api/new-route', (req, res) => {
   res.send('New Route');
 });
 
